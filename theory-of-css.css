@@ -1,0 +1,231 @@
+1. CSS ========>> Cascading Style Sheets
+
+2. There have 3 deferent kind of CSS =============>>> 1. Internal css(makeup) 2. External css(makeup) 3. Inline css(outdooor makeup)
+
+3. Please search google it ========> CSS Measuring unit and go to w3school then read it please 
+
+
+
+
+
+
+.................................................. Internal/Embeded Style ..................................................
+
+1. structure of Internal style tag :
+
+           <style>
+           
+           	p{                         [ age style tag likhbo then jei gotro te style marte chai seta likhe 3rd bracket diye ]
+           	   style-name: style-value;          [ ei style marte gele motamotii 4 ta jinish lagbe =====> style-name: style-value; ]
+           	}
+           	h{
+           	                           [ color code name with hexacode or rbg(red,green,bue) or rbga(red,green,blue,opasity)]
+           	}                          [ if you need color code then search google w3school html color style code or vs code always suggest korbe]
+           	#germany{
+           	
+           	}
+           	.bd{
+           	
+           	}
+           </style>
+           
+           
+2. Color tag            ==========> color: color name/code/rgb/rgba;
+2. Background color tag ==========> background-color: colorName/code;
+3. height tag           ==========> height: px;
+4. width tag            ==========> width: px;             [if you want than use parcentage its make dynamic change]
+5. font-size tag        ==========> font-size: px;         [ you can use also parcentage here] 
+6. font-style tag       ==========> font-style: fontName;
+7. font-family tag      ==========> font-family: font-familyName;
+8. ID                   ==========> id=""
+9. Class                ==========> class=""
+10.span tag             ==========> <span></span>
+11. Border              ==========> border: width border-types color;
+12. border radius       ==========> border-radius: 10px;
+13. Margin              ==========> margin: 20px 10px 20px 10px;  [ clock wise ghurbe ]
+14. margin-right        ==========> margin-right: 20px;
+15. margin-left         ==========> margin-left: 30px;
+15. margin-top          ==========> margin-top: 10px;
+16. margin-bottom       ==========> margin-bottom: 30px; 
+17. padding             ==========> padding: 20px 10px 15px 10px;
+18. padding-top         ==========> padding-top: 10px;
+19. padding-bottom      ==========> padding-bottom: 20px;
+20. padding-right       ==========> padding-right: 10px;
+21. padding-left        ==========> padding-left: 20px;
+22. text align          ==========> text-align: center;
+23. text align          ==========> text-align: justify;                [ sob likha sod dike align korar jonno ]
+24. font-weight         ==========> font-weight: 100px;
+25. Display inline n block =======> display: inline; display: block;
+26. font-variant: small-caps; means all are capital letter
+27. font-variant: capital-caps; means all are small letter
+
+
+
+
+
+
+
+
+
+
+
+
+### ID  ========> Normally amra style tag dile sobar upor e makeup porbe so amra specific kauke make up korte chaile amader id attribute use korte 		hbe like ami jake chai take makeup dite parbo alada vabe :
+	
+	
+				<h1 id="germany"></h1>                [ style markup er modde id define korte age # deya lage like #germany]
+				
+
+### CLASS =======> Similar style ek ba ekadhik jaygay use koorte chaile amra id na use kore amra class use korbo.. class o same markup er ekta 			attribute ar seta abar style e define korte chaile #ba only class name deya jabe na class name er age full stop ba dot dite hbe :
+		ekta tag er moddhe ekadhik class use kora jabe 
+ 
+			    <p class="bd">amar sonar bangla</p>	
+			    
+			    
+### kono kichu indivisually make up korte chaile ba ekta ongsho k make up korte chaile span use korbo 
+
+                <span></span>	
+                
+                
+                
+### CSS box model =======> css box model depend on height, width, padding, border, margin
+
+
+### text align korte chaile amra setak left, right, center sob dikei nite parbo
+
+
+### inline element =======> kichu kichu tag inline e thake jemon == anchor, span, small
+
+### block element  =======> kichu kichu tag inline thake na take block element bole  == <p>, <li>, <div>
+
+### External css ========> etokkon amra dekhlam internal css but big projects ba professional kaje external css use korte hoy cause html holo obokathamo ar css holo makeup so taile amdr alada ekta css file make kore setar sathe html k link kore dite hobe like:
+
+
+                      <link rel="stylesheet" href="CSS/main.css">         [ href e link dhorai dite hobe css file er]
+
+
+### Inline css ========> inline css majhe majhe kichu tricky jaygay kore eta recomanded na ar etay style tag take markup er attribute baniye soob e kora jay like 
+
+                  <p style="font-size: 60px;">This the css theory of my course</p>
+   
+   
+  
+###### CSS comment tag ============>> /* amar sonae bangla - like this */  
+
+
+######  Inline elemet to block element ======> display: block;    [ inline elements ekta arektar pashe horizontal vabe bose]
+######  Block elemet to Inline element ======> display: inline;   [ block elements pura line block kore bose]
+
+
+######......  the main box model css depends on ==>> border,padding,margin [ Every where all contant have indivisual box model and when you give css style then think it box model types]
+   
+   #####..... ******************** Must know how to inspect box model and details of html and css by using chrome inspect ***********************
+                  
+#####.... pseudo-box??
+
+============>      What are Pseudo-classes?
+
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+    Style an element when a user mouses over it
+    Style visited and unvisited links differently
+    Style an element when it gets focus
+
+
+
+########....... pseudo-class we use =====>> hover,,,,, visited,,,,focus,,,, first-child,,,, last-child,,,, nth-child,,,, etc.. try all the classes my self there have huge pseudo classes....... !!!!!
+
+#######........ pseudo-class writing structure ======>> 
+          
+          
+          selector:pseudo-class {
+          	property: value;
+          } 
+
+
+#######........ pseudo-elements  ==========>> What are Pseudo-Elements?
+
+A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+    Style the first letter, or line, of an element
+    Insert content before, or after, the content of an element: it is only use with block content
+    
+    
+::after 	::before 	::first-letter 	::first-line 	::marker  	::selection
+    
+    
+######......... The syntax of pseudo-elements:
+                    
+                    
+                    selector::pseudo-element {
+                    	property: value;
+                    }
+
+
+
+##### ......... The position Property:
+
+==========>> The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).The position property specifies the type of positioning method used for an element.
+
+There are five different position values:
+
+    static
+    relative
+    fixed
+    absolute
+    sticky
+
+Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+
+
+#####........ position: static;
+
+HTML elements are positioned static by default.
+
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page
+
+
+####......... position: relative;
+
+An element with position: relative; is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+
+#####........ position: fixed;
+
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located
+
+
+#####........ position: absolute;
+
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements
+
+
+#####....... position: sticky;
+
+An element with position: sticky; is positioned based on the user's scroll position.
+
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+
+          
+                   
+
+                
+                
+                		
+				
+
