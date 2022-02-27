@@ -30,6 +30,25 @@
            </style>
            
            
+           
+/**************************************************************************************************************************************************
+**************************************************************************************************************************************************
+
+		IF YOU NEED TO SEE CSS WHEN CODING THAN GO TO THIS LINK : https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_transform
+		
+**************************************************************************************************************************************************
+**************************************************************************************************************************************************/
+
+
+
+
+
+/*********************************************************************************************************************************************
+								Basic-color,box-model,text,background,id,class,height,width,font related css
+*********************************************************************************************************************************************/
+
+
+
 2. Color tag            ==========> color: color name/code/rgb/rgba;
 2. Background color tag ==========> background-color: colorName/code;
 3. height tag           ==========> height: px;
@@ -60,9 +79,260 @@
 27. font-variant: capital-caps; means all are small letter
 
 
+/*********************************************************************************************************************************************
+												position related css
+*********************************************************************************************************************************************/
+
+
+28. position            ==========> position: static/relative/absolute/fixed/sticky;
+29. border-collapse for table ====> border-collapse: collapse or separate 
+30. list-style                ====> list-style: none;  [ if you decorated you list item then use list-style, there have plenty style available]
+
+
+/*********************************************************************************************************************************************
+												imediate child related css
+*********************************************************************************************************************************************/
+
+
+31. all child make css structure==> parent-selector child-selector{}
+32. only imediate child make css==> parent-selector>child-selector{}
+33. display hide css   ===========> display: none;         [ etay actually oi element ta gayeb hoye jabe and er niche kono element thakle seta
+													 		tar jaygay chole jabe]
+													 		
+													 		
+													 		
+													 		/*********************************************************************************************************************************************
+												float related css
+*********************************************************************************************************************************************/
+
+
+34. float              ===========> float: left or right;      [ means div kon side e thakbe lekha gula ]
+34.1. clear            ===========> clear: left or right;      [ means seta float er moto hobe na block element er moto kaj korbe]
+34.2. max-height       ===========> max-height: 200px;         [ eta float korle box gula sob soman korar jonno]
+34.2. min-height       ===========> min-height: 200px;         [ eta float korle box gula sob soman korar jonno]
+
+
+/*********************************************************************************************************************************************
+												cursor related css
+*********************************************************************************************************************************************/
+
+alias =========================================>> cursor: alias;
+all-scroll ====================================>> cursor: all-scroll;
+auto ==========================================>> cursor: auto;
+cell ==========================================>> cursor: cell;
+context-menu =================================>> cursor: context-menu;
+col-resize ===================================>> cursor: col-resize;
+copy =========================================>> cursor: copy;
+crosshair ====================================>> cursor: crosshair;
+default ======================================>> cursor: default;
+e-resize =====================================>> cursor: e-resize;
+ew-resize ====================================>> cursor: ew-resize;
+grab =========================================>> cursor: -webkit-grab; cursor: grab;
+grabbing =====================================>> cursor: -webkit-grabbing; cursor: grabbing;
+help =========================================>> cursor: help;
+move =========================================>> cursor: move;
+n-resize =====================================>> cursor: n-resize;
+ne-resize ====================================>> cursor: ne-resize;
+nesw-resize===================================>> cursor: nesw-resize;
+ns-res========================================>> cursor: ns-resize;
+===============================================>> cursor: nw-resizwse-resize 
+===============================================>> cursor: nwse-resize;
+no-drop ======================================>> cursor: no-drop;
+none =========================================>> cursor: none;
+not-allowed ==================================>> cursor: not-allowed;
+pointer ======================================>> cursor: pointer;
+progress =====================================>> cursor: progress;
+row-resize ===================================>> cursor: row-resize;
+s-resize =====================================>> cursor: s-resize;
+se-resize ====================================>> cursor: se-resize;
+sw-resize ====================================>> cursor: sw-resize;
+text =========================================>> cursor: text;
+url ==========================================>> cursor: url(myBall.cur),auto;
+w-resize =====================================>> cursor: w-resize;
+wait =========================================>> cursor: wait;
+zoom-in ======================================>> cursor: zoom-in;
+zoom-out =====================================>> cursor: zoom-out;
+
+
+/*********************************************************************************************************************************************
+												 visibility related css
+*********************************************************************************************************************************************/
+
+
+35. visibility         ===========> visibility: visible{by default} or hidden  [ means content tar jaygay thakbe but seta screen e dekha jabe na]
+
+
+/*********************************************************************************************************************************************
+												 overflow related css
+*********************************************************************************************************************************************/
+
+
+35. overflow           ===========> overflow: visible;   [ means jeta box chere bare jabe setar in build css code ]
+36. overflow           ===========> overflow: hidden;    [ overflow hidden means jeta bere box chere ber hoye jabe seta hide hoye box er size 										wise tototuku thakbe]
+37. overflow           ===========> overflow: scroll;    [ ei css code jeno lekha o overflow na kore abar hidden o na hoye scroll hoye jay box e]
+38. overflow           ===========> overflow: auto;      [ means etao o na hidden hobe na visible hobe scroll hobe but scroll button only y axis 										e hobe x-axis e hobe na]
+39. overflow-x&overflow-y ========> this one use for x axis scroll button on off and y-axis scroll button on off
+40. text-overflow      ===========> text-overflow: ellipsis [ means box e likha ta overflow na hoye .... akare last e dekhabe and seta overflow 
+									hole overflow: hidden; kore dite hobe ]
+									
+/*********************************************************************************************************************************************
+												  Word-wrap related css
+*********************************************************************************************************************************************/									
+									
+41. white-space        ===========> white-space: normal or nowrap or pre-wrap; [ means lekha gula wrap hoye line by line hobe na ]
+
+
+/*********************************************************************************************************************************************
+												  transform related css
+*********************************************************************************************************************************************/
+
+42. transform          ===========> transform: scale(portion ratio) or rotate(deg) or translate(px) or skew(deg); [ tranform also use axis wise]
+43. transform-origin   ===========> transform-origin: top right;    [ etar mane holo tranform jeta hobe seta elements er ki kendro kore hobe ]
+
+
+/*********************************************************************************************************************************************
+												  transition related css
+*********************************************************************************************************************************************/
+
+44. transition-property===========> transition-property: width height transform;
+45. transition-delay   ===========> transition-delay: 2s;
+46. transition-duration===========> transition-duration: 2s;
+46. transition-timing-funtion ====> transition-timing-fucntion: linear ease ease-in ease-out ease-in-out;
+47. transition         ===========> transition: property duration timing-function delay; [transition: width 10s ease-out 5s, transform 3s ease 1s]
+
+/*********************************************************************************************************************************************
+												  animation related css
+*********************************************************************************************************************************************/
+
+48. animation          ===========> animation: name duration timing-function delay iteration-count direction  fill-mode;
+49. animation-name     ===========> animation-name: what you want;   [ @keyframes er nam jeta dibo setai animation-name]
+50. animation-duration ===========> animation-duration: 2s;         [ jotokkhon dhore ei animation cholbe]
+51. animation-delay    ===========> animation-delay: 1s;    [animation kotokkhon delay te start hobe abar value (-) dile delay na kore agei start 										hobe]
+52. animation-iteration-count=====> animation-iteration-count: 5 infinite;  [ eta holo animation ta kotobar hobe eta number diye or infinity o 										deya jay]
+53. animation-direction===========> animation-direction: normal reverse alternate alternate-reverse; [ eta holo animation ta kon dikh theke giye 										kon dike asbe type normal means eta default ar reverse means animation backword kaj korbe, alternate means 										age forward kaj kore abar backword asbe, alternate-reverse means age backword kaj korbe than forward kaj 										korbe] 
+54. animation-timing-function=====> animation-timing-function; linear ease ease-in ease-out ease-in-out; [ same as transition-timing-function]
+55. animation-fill-mode===========> animation-fill-mode: forward backward both; [ eta eto dorkar hoy na ]
+56.	animation-play-state =========> animation-play-state: paused or running; [ etar mane hocche animation ta chalanor command eta ki poaused 										thakbe naki running page load hoile auto cholte thakbe]
+57. animation @keyframes =========> style e kono animationn er kaj css e korte hole eta diye etar moddhe from and to or 0%, 25%, 50%, 75%, 100% e 										animation change kora jay
 
 
 
+/*********************************************************************************************************************************************
+												    flexbox related css
+*********************************************************************************************************************************************/
+
+
+58. justify-content  =============> justify-content: right left center flex-end flex-start; 
+59. justify-content  =============> justify-content: space-between;  [ sob gula elements er moddhe soman gap korbe and egula responsive]
+60. justify-content  =============> justify-content: space-evenly;  [ means left right and content er moddhe ekta soman gap rakhbe etao resposive]
+61. justify-content  =============> justify-cobtent: space-around; [ means flex box er left right pading half thakbe content ekta theke arektar 																	distance]
+62. align-item       =============> align-item: flex-start;       [ means vertical vabe element gula flex hoye thakbe]
+63. align-item       =============> align-item: flex-end;         [ means vertical vabe element gula container er niche jabe]
+64. align-item       =============> align-item: center;           [ means vertical vabe element gula center e chole asbe]
+65. align-item       =============> align-item: stretch;        [ stretch kora means container er element gular height deya na thakle container 																 er height wise element gula stretch kore lomba korano] 
+
+65.1. align-content  =============> align-content: flex-start flex-end center;  [eta same justify-content er moto just eta column and row wise 																					kaj kore ar justify-content only horizontal vabe mane row wise 																					kaj kore baki sob kaj ek]
+65.2. align-content  =============> align-content: stretch;  [eta same justify-content er moto just eta column and row wise kaj kore ar 
+															 justify-content only horizontal vabe mane row wise kaj kore baki sob kaj ek]
+65.3. align-content  =============> align-content: space-between;  [eta same justify-content er moto just eta column and row wise kaj kore ar 
+															 	   justify-content only horizontal vabe mane row wise kaj kore baki sob kaj ek]
+65.4. align-content  =============> align-content: space-evenly;  [eta same justify-content er moto just eta column and row wise kaj kore ar 
+															      justify-content only horizontal vabe mane row wise kaj kore baki sob kaj ek]
+65.5. align-content  =============> align-content: space-around;  [eta same justify-content er moto just eta column and row wise kaj kore ar 
+															      justify-content only horizontal vabe mane row wise kaj kore baki sob kaj ek]
+
+
+
+66. flex-grow        =============> flex-grow: 1;          [ means flex position ta grow korbe i mean boro hobe jetay flex-grow ta deya hobe]
+67. order            =============> order: 1 or 2;   [ means order diye konta kon pashe jabe mane dane na bame like side menu r jonno lage eta ]
+67.1. flex-shrink    =============> flex-shrink: 0;       [ means onno container er cheye boro hobe ar 1 or 2 dile tototuku choto hobe]
+67.2. flex-basis     =============> flex-basis: px;       [ mane pixel wise jeta iccha sei container boro choto kora jabe]
+67.3. flex           =============> flex: grow shrink basis;  [mane chaile eksathe flex diye oi container er grow koto hobe, shrink koto hobe, 																	and basis diye px diye boro choto kora ek sathe kora jabe]
+67.4. align-self     =============> align-self: center flex-start flex-end; [eta mainly onek gula container ek sathe flex korle, indivisually 																				konta center ba first e or end e rakhte chaile eta use kora hoy] 
+67.6. flex-wrap      =============> flex-wrap: wrap;             [eta mainly container gulake column and row wise wrap korar jonno use kora hoy ]
+67.7. flex-wrap      =============> flex-wrap: nowrap;          [eta mainly container gulake column and row wise wrap na korar jonno use kora hoy]
+67.8. flex-wrap      =============> flex-wrap: wrap-reverse;  [eta mainly container gulake column and row wise wrap kore reverse kore dey]
+
+
+68. flex-direction   =============> flex-direction: column;      [ mane flex gula column wise hobe vertical vabe]
+69. flex-direction   =============> flex-direction: row;		 [ mane flex gula row wise hobe horizontal vabe eta default]
+70. flex-direction   =============> flex-direction: column-reverse;[ colum wise hobe but ulta hoye bosbe like 1 theke 5 but rta hobe 5 theke 1]
+71. flex-direction   =============> flex-direction: row-reverse; [ mane row wise hobe but ulta hoye bosbe like 1 theke 5 but eta hobe 5 theke 1]
+
+
+
+/*********************************************************************************************************************************************
+												     Grid related css
+*********************************************************************************************************************************************/
+
+
+72. display          =============> display: grid;                   [ sob gula container flex na hoye prottekta jayga niye nibe]
+73. display          =============> display: inline-grid             [ inline grid means ek column e grid hobe full page e]
+
+/**************************************************** Grid column-row size *********************************************************************/
+
+74. grid-templete-column =========> auto auto auto auto;             [ auto means column 4 ta sob gula e full page e soman vag kore nibe]
+75. grid-templete-column =========> 20px 100px 50px 10px auto;       [ means sob gula column er size indivisual vabe size deya and last ta page 																	   er baki jayga niye nibe auto value er karone]
+76. grid-templete-column =========> repeat(4, 1fr) 200px;            [ means 4 ta column repeat koro soman vabe ar baki ta 200px indivisual]
+77. grid-templete-column =========> repeat(5, 1fr) 2fr;              [ means 5 ta same size e repeat koro ar bakita ei 5 tar double size hobe]
+77.1 grid-templete-row   =========> px auto repeat(4, 1fr) 2fr       [ same as grid-templete-column er motoi row gulake o size deya jay]
+
+/*************************************************** Grid-column,row-gap ************************************************************************/
+
+78. column-gap       =============> column-gap: px;                  [ means column gap px diye kora jay ete column gap hobe]
+79. row-gap          =============> row-gap: px;                     [ means row gular moddhe gap kora jay pixel size diye roe gap hoy]
+80. gap              =============> gap: px px;                     [ means gap property diye eksathe row and column er gap kora jay indivisually]
+81. gap              =============> gap: px;                        [ means eta ek value e column and row er gap size kora jay]
+
+/**************************************** Grid container column, row start-end setup ************************************************************/
+
+82. grid-column-start ============> grid-column-start: 1;       [ mane indivisual container start hobe column line 1 theke]
+83. grid-column-end  =============> grid-column-end: 4;         [ mane indivisual container end hobe column line 4 e]
+84. grid-row-start   =============> grid-row-start: 1;          [ mane indivisual container er row start hobe row line 1 theke]
+85. grid-row-end     =============> grid-row-end: 4;            [ mane indivisual container er row start hobe 1 theke end hobe row line 4 e]
+
+/**************************************** Grid container column, row start-end setup in two property ******************************************/
+
+86. grid-column      =============> grid-column: 1/5;           [ mane column ta suru hobe column line 1 theke sesh hobe 5th line e, kintu ekhane 																		prothom line soho hisab hobe]
+87. grid-column      =============> grid-column: 1/ span 4;     [ mane column ta suru hobe column line 1 theeke sesh hobe 5th line e, kintu 																	ekhane prothom line bade 4 line span hisab kora hbe mind it]
+88. grid-row         =============> grid-row: 1/5 1/ span 4     [ same as grid-column see it ]
+
+/**************************************** Grid container column, row start-end setup in one property ******************************************/
+
+89. grid-area        =============> 1 / 2 / 5 / 6;              [ etar mane holo eksathe define kore deya container ta koto row theke koto row te 																	and koto column theke koto column e jabe but age row hisab start hobe like ekhane 																	row line 1 theke start hoye sesh hobe 5th line e and column 2nd line theke start 																	hoye sesh hobe 6th line e obossoi ekhane 1st line "theke" sob hisab hobe]
+90. grid-area        =============> 1 / 2 / span 5 / span 6;    [ etar mane holo eksathe define kore deya container ta koto row theke koto row te 																	and koto column theke koto column e jabe but age row hisab start hobe, ekhane 																	row line 1 theke start hoye sesh hobe 5th line e and column 2nd line theke start 																	hoye sesh hobe 6th line e obossoi ekhane 1st line "chara" sob hisab hobe]
+
+
+/**************************************** justify-content, align-content, align-item property ******************************************/
+
+
+91. justify-content  =============> justify-content: start end center;   [ same as flexbox justify-content like changing in horizontally]
+92. justify-content  =============> justify-content: space-between space-evenly space-around; [ same kaj kre flexbox er motoi]
+93. align-content    =============> align-content: start end center space-between space-evenly space-around;        [ same kaj kore flex box er   																														moto eta mainly horizontal 																														and vertically ek sathe kaj 																													kore ar justify use korle 
+																													vertically kaj korte hole 																														"align-item" use kora lage ]
+
+																													
+/**************************************** grid-area and grid-templete-areas insection property ******************************************/
+
+																													
+94. .item1 {grid-area: myArea;}       .grid-container { grid-template-areas: 'myArea myArea myArea myArea myArea'; } 
+    
+    								[ ekhane amra chaile grid-templete-areas diye nijer custom ekta name diye joto gula column lage use korte 											pari and abar kono indivisual container grid area change korte gele amra jodi grid-area te sei custom 												name bosai like grid-area: myArea thahole seta myArea r sob container er column er jayga ekla nibe ]
+    								
+95. .item1 {grid-area: myArea;}       .grid-container { grid-template-areas: 'myArea myArea . . .'; } 
+									
+									[ ekhane amra chaile grid-templete-areas diye nijer custom ekta name diye joto gula column lage use korte 											pari and abar kono indivisual container grid area change korte gele amra jodi grid-area te sei custom 										    name bosai like grid-area: myArea thahole seta myArea r sob container er column er jayga ekla nibe but 											ekhane myArea infinity tai duita show kore than sei container dui column er jaygay e dokhol korbe] 																				
+																													
+																													
+***************************************************************************************************************************
+*	NOTE:--  if you want to know this grid-area and grid-templete-areas intersection details than goto this link belo:--  *
+*                                                                                                                         *
+*			                          Link: https://www.w3schools.com/css/css_grid_item.asp                               *
+*                                                                                                                         *
+***************************************************************************************************************************
+
+
+ 
 
 
 
@@ -76,7 +346,7 @@
 				<h1 id="germany"></h1>                [ style markup er modde id define korte age # deya lage like #germany]
 				
 
-### CLASS =======> Similar style ek ba ekadhik jaygay use koorte chaile amra id na use kore amra class use korbo.. class o same markup er ekta 			attribute ar seta abar style e define korte chaile #ba only class name deya jabe na class name er age full stop ba dot dite hbe :
+### CLASS =======> Similar style ek ba ekadhik jaygay use koorte chaile amra id na use kore amra class use korbo.. class o same markup er ekta 			attribute ar seta abar style e define korte chaile ba only class name deya jabe na class name er age full stop ba dot dite hbe :
 		ekta tag er moddhe ekadhik class use kora jabe 
  
 			    <p class="bd">amar sonar bangla</p>	
@@ -87,7 +357,10 @@
                 <span></span>	
                 
                 
-                
+### abossoi css likhar somoy jei id ba class er kaj age setai age likhte hbe than porer ta 
+
+
+              
 ### CSS box model =======> css box model depend on height, width, padding, border, margin
 
 
@@ -219,6 +492,12 @@ Note: Absolute positioned elements are removed from the normal flow, and can ove
 An element with position: sticky; is positioned based on the user's scroll position.
 
 A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+
+
+
+
+
 
 
           
