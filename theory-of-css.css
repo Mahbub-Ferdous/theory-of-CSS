@@ -538,8 +538,50 @@ vs code shortcut ===> emmet or Ctrl+f for replace
 
 ************************************************************************************************************************************************/
 
-          
-                   
+
+
+
+/***********************************************************************************************************************************************
+
+vs code shortcut ===> eksathe upore niche onek gula tag er pashe kiche add koraar jonnno use Ctrl+k+downarrow
+
+************************************************************************************************************************************************/
+
+
+/***********************************************************************************************************************************************
+
+custom css property declaration :
+
+:root {
+	--custom-property: value;
+
+}
+
+we can use it by using var() function:
+
+like,
+background-color: var(--custom-property);
+
+and we can use horizontal container by using float property and if float pproperty reach any container than it will be change and going to horizontal line, if we reduce that that we call - "clear" property and do it on both than it will be reduce and we like,
+
+#### if we can do 2 vertical container to horizontal than, 
+
+float: left right;
+
+### if its disturb any other container with desire container than call clear propety,
+
+clear: both; 
+
+we can call also calc() function for doing some calculation on any property 
+
+
+************************************************************************************************************************************************/
+
+
+
+
+
+
 
                 
                 
