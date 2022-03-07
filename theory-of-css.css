@@ -77,7 +77,7 @@
 25. Display inline n block =======> display: inline; display: block;
 26. font-variant: small-caps; means all are capital letter
 27. font-variant: capital-caps; means all are small letter
-
+27.1 <filter-function> ===========> filter:
 
 /*********************************************************************************************************************************************
 												position related css
@@ -321,13 +321,43 @@ zoom-out =====================================>> cursor: zoom-out;
     								
 95. .item1 {grid-area: myArea;}       .grid-container { grid-template-areas: 'myArea myArea . . .'; } 
 									
-									[ ekhane amra chaile grid-templete-areas diye nijer custom ekta name diye joto gula column lage use korte 											pari and abar kono indivisual container grid area change korte gele amra jodi grid-area te sei custom 										    name bosai like grid-area: myArea thahole seta myArea r sob container er column er jayga ekla nibe but 											ekhane myArea infinity tai duita show kore than sei container dui column er jaygay e dokhol korbe] 																				
+									[ ekhane amra chaile grid-templete-areas diye nijer custom ekta name diye joto gula column lage use korte 											pari and abar kono indivisual container grid area change korte gele amra jodi grid-area te sei custom 										    name bosai like grid-area: myArea thahole seta myArea r sob container er column er jayga ekla nibe but 											ekhane myArea infinity tai duita show kore than sei container dui column er jaygay e dokhol korbe]
+									
+									
+									
+/****************************************************** Media query and flexbox***************************************************************** ************************************************************************************************************************************************/              							
+									
+96. responsive by using media query and flex box : 	basically when we can try to make our static website to responsive we can use flexbox or grid also we can use media query also its pretty logical like you caan make website for laptop screen, tv screen, tablet screen, mobile screen indivisually by using media query and the screen size with value of pixel:
+
+
+==========>> structure of media query : mane ekhane screen size er width er upoor er css property change hobe
+
+@media (min-max-width: value px){
+	.classComponent{
+		another-css-property
+	}
+}
+ 																			
 																													
 																													
+
+
+
+
 ***************************************************************************************************************************
 *	NOTE:--  if you want to know this grid-area and grid-templete-areas intersection details than goto this link belo:--  *
 *                                                                                                                         *
 *			                          Link: https://www.w3schools.com/css/css_grid_item.asp                               *
+*                                                                                                                         *
+***************************************************************************************************************************
+
+
+
+
+***************************************************************************************************************************
+*	NOTE:--  if you want to see the all important css property than goto this link belo:--                                *
+*                                                                                                                         *
+*			                          Link: https://www.tutorialrepublic.com/css-reference/css3-properties.php            *
 *                                                                                                                         *
 ***************************************************************************************************************************
 
@@ -495,10 +525,18 @@ A sticky element toggles between relative and fixed, depending on the scroll pos
 
 
 
+/***********************************************************************************************************************************************
+
+debug in browser ====> amra chaile inspect e giye browser e div by div inspect kore debug korte pari 
+
+************************************************************************************************************************************************/
 
 
+/***********************************************************************************************************************************************
 
+vs code shortcut ===> emmet or Ctrl+f for replace 
 
+************************************************************************************************************************************************/
 
           
                    
