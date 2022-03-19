@@ -49,16 +49,17 @@
 
 
 
-2. Color tag            ==========> color: color name/code/rgb/rgba;
-2. Background color tag ==========> background-color: colorName/code;
-3. height tag           ==========> height: px;
-4. width tag            ==========> width: px;             [if you want than use parcentage its make dynamic change]
-5. font-size tag        ==========> font-size: px;         [ you can use also parcentage here] 
-6. font-style tag       ==========> font-style: fontName;
-7. font-family tag      ==========> font-family: font-familyName;
+2. Color                ==========> color: color name/code/rgb/rgba;
+2. Background color     ==========> background-color: colorName/code;
+3. height               ==========> height: px;
+4. width                ==========> width: px;             [if you want than use parcentage its make dynamic change]
+5. font-size            ==========> font-size: px;         [ you can use also parcentage here] 
+6. font-style           ==========> font-style: italic / normal etc;
+7. font-family          ==========> font-family: font-familyName;
+7.1 font-weight         ==========> font-weight: bold 700;                [400 is mainly normal font]
 8. ID                   ==========> id=""
 9. Class                ==========> class=""
-10.span tag             ==========> <span></span>
+10.span                 ==========> <span></span>
 11. Border              ==========> border: width border-types color;
 12. border radius       ==========> border-radius: 10px;
 13. Margin              ==========> margin: 20px 10px 20px 10px;  [ clock wise ghurbe ]
@@ -73,11 +74,19 @@
 21. padding-left        ==========> padding-left: 20px;
 22. text align          ==========> text-align: center;
 23. text align          ==========> text-align: justify;                [ sob likha sod dike align korar jonno ]
+23.1 text align          ==========> text-align: right;                 [ eta right theke suru hobe like arabia lekha ]
+24.1 text align          ==========> text-align: left;                  [ this is in build always text-align start with left]
 24. font-weight         ==========> font-weight: 100px;
 25. Display inline n block =======> display: inline; display: block;
 26. font-variant: small-caps; means all are capital letter
 27. font-variant: capital-caps; means all are small letter
 27.1 <filter-function> ===========> filter:
+27.2 max-width / min-width========>
+28. background-image     =========> background-image: url();
+29. background-repeat: ===========> background-repeat: no-repeat;
+30. background:        ===========> background: linear-gradient(45deg, lightsalmon, tomato), radial-gradient;
+31. background-position: =========> background-position: right, left, center,top , bottom;
+32. background-attachment ========> background-attachment: fixed;
 
 /*********************************************************************************************************************************************
 												position related css
@@ -86,7 +95,33 @@
 
 28. position            ==========> position: static/relative/absolute/fixed/sticky;
 29. border-collapse for table ====> border-collapse: collapse or separate 
-30. list-style                ====> list-style: none;  [ if you decorated you list item then use list-style, there have plenty style available]
+30. list-style-type           ====> list-style: none;  [ if you decorated you list item then use list-style, there have plenty style available]
+31. box-shadow:              =====> box-shadow: 5px 7px 40px gray; 
+32. border-image-slice      ======> border-image-slice: 1; 
+33. box-sizing              ======> box-sizing: border-box;     
+
+
+
+/*********************************************************************************************************************************************
+												text related css
+*********************************************************************************************************************************************/
+
+1. text align          ==========> text-align: center;
+2. text align          ==========> text-align: justify;                [ sob likha sod dike align korar jonno ]
+3. text align          ==========> text-align: right;                 [ eta right theke suru hobe like arabia lekha ]
+4. text align          ==========> text-align: left;                  [ this is in build always text-align start with left]
+5. text-decoration           ====> text-decoration: none;     [means text e decoration joto gula ache sob hide hoye jabe]
+6. text-decoration           ====> text-decoration: overline; [overline means lekhar upore line asbe lekha line er niche thakbe]
+7. text-decoration           ====> text-decoration: underline; [underline means lekhar niche line bosbe lekha line er upre thakbe] 
+8. text-decoration           ====> text-decoration: line-through; [that means oi lekha ta kete dibe]
+9. text-indent               ====> text-indent: px;      [joto px diben tototuku sore asbe line er start theke]
+10. text-transform           ====> text-transform: capitalize , uppercase, lowercase [ekhane capitalize means so likhar 1st word capital hobe, 										uppercase sob borohater hobe, lowercase sob choto hater hobe]
+
+11. text-shadow              ====> text-shadow: px px colorName; 
+12. word-spacing             ====> word-spacing: px; [word er moddhe gap]
+13. letter-spacing           ====> letter-spacing: px; [same as word spacing ]
+
+******************************* please check w3school css text chapter and you know everything what you want  ***************************
 
 
 /*********************************************************************************************************************************************
@@ -98,7 +133,10 @@
 32. only imediate child make css==> parent-selector>child-selector{}
 33. display hide css   ===========> display: none;         [ etay actually oi element ta gayeb hoye jabe and er niche kono element thakle seta
 													 		tar jaygay chole jabe]
-													 		
+34. one or more selector make css one time ====> selector, selector, selector
+35. div + p                    ======> selector styles means div er baire imediate p tag css hobe
+36. div ~ p                    ======> this selector means below div all p tag will be css 													 
+		
 													 		
 													 		
 													 		/*********************************************************************************************************************************************
@@ -107,7 +145,7 @@
 
 
 34. float              ===========> float: left or right;      [ means div kon side e thakbe lekha gula ]
-34.1. clear            ===========> clear: left or right;      [ means seta float er moto hobe na block element er moto kaj korbe]
+34.1. clear            ===========> clear: left or right and both;      [ means seta float er moto hobe na block element er moto kaj korbe]
 34.2. max-height       ===========> max-height: 200px;         [ eta float korle box gula sob soman korar jonno]
 34.2. min-height       ===========> min-height: 200px;         [ eta float korle box gula sob soman korar jonno]
 
@@ -579,10 +617,48 @@ we can call also calc() function for doing some calculation on any property
 
 
 
+/*********************************************************************************************************************************************
+												          Animation css Library
+*********************************************************************************************************************************************/
 
 
+/* Answer to: "css animation library" */
 
+/*
+  There are an awful lot of libraries that want to help you animate
+  things on the web. These aren’t really libraries that help you
+  with the syntax or the technology of animations, but rather are
+  grab-and-use as-is libraries. Want to apply a class like
+  “animate-flip-up” and watch an element, uhhh, flip up? These are
+  the kind of libraries to look at.
 
+  1. Animista (personal favourite)
+  2. Animate.css
+  3. Tachyons
+  4. Infinite
+  5. Motion UI
+  6. Micron
+  7. Vivify
+  9. Hover.css
+  10. AllAnimationCss3
+  11. Magic Animations CSS3
+  12. It's Tuesday
+  13. CHS
+  14. ReboundGen
+  15. CSShake
+  16. Motion CSS
+  17. cssanimation.io
+  18. WickedCSS
+  19. Woah.css
+  20. Obnoxious.css
+  21. Hexa
+  22. Mimic.css
+
+  For more information and direct links to the website of these
+  libraries, go to:
+  https://css-tricks.com/css-animation-libraries/
+*/
+Source:css-tricks.com
                 
                 
                 		
