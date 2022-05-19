@@ -87,6 +87,7 @@
 30. background:        ===========> background: linear-gradient(45deg, lightsalmon, tomato), radial-gradient;
 31. background-position: =========> background-position: right, left, center,top , bottom;
 32. background-attachment ========> background-attachment: fixed;
+33. outline:              ========> outline: none; [ if you want to hidden outline of input field than this css property outline use ]
 
 /*********************************************************************************************************************************************
 												position related css
@@ -669,3 +670,24 @@ Source:css-tricks.com
 2. Tailwind  ====> most important to learn!!!
 3. Materialize ==> less important to learn but must learn its like bootstrap and tailwind
 4. Bulma     ====> you can try bulma its amazing and cool also!!!
+
+
+
+// How to align input forms in HTML
+
+/* <form>
+  <p>
+    <label for="a">Short label:</label>
+    <input id="a" type="text">
+  </p>
+  <p>
+    <label for="b">Very very very long label:</label>
+    <input id="b" type="text">
+  </p>
+</form>*/
+
+/* form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; } */
+
